@@ -41,7 +41,7 @@
 
   $(document).ready(function() {
     $("a").click(function() {
-      
+      playSound();
       for (i = 0; i < 2; i++) {
 
         //alert(i);
@@ -125,6 +125,11 @@
 
 
   }
+  
+  function playSound() {
+    var audio = new Audio('sound.mp3');
+    audio.play();
+  }
 </script>
 
 <body>
@@ -133,7 +138,7 @@
     <div class="navbar-fixed">
       <nav style="background-color:#81cdd8">
     <div class="col s12">
-        <a id="gen" class="waves-effect waves-light btn-large green">Generate</a>
+        <a id="gen" class="waves-effect waves-light btn-large green" style="margin-left:8%"> Generate</a>
        <!-- <a id="love" class="waves-effect waves-light btn-large red" ><i class="fa fa-heart"></i></a>-->
          <!--<h3 class="" style="display:inline; vertical-align:middle"> Under 5 - Disruptive Idea Generator </h3>-->
     <a class="fb-share-button" data-href="http://thecurryman.github.io/Under5/" data-layout="button_count"></a>

@@ -75,7 +75,10 @@ footer {
     font-size: 60px;
     width:100%;
 }
-
+a{
+  
+  
+}
 .tagline {
   font-weight: normal;
   font-size: 24px;
@@ -102,5 +105,7 @@ nav #navbar-fixed{
   alignment-baseline: bottom;
   text-decoration: italic;
 }
-nav{
+.pluginButton {
+  vertical-align: middle;
+  
 }
