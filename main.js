@@ -1,11 +1,8 @@
 // IFTTT Slottt Machine by Jen Hamon
 // jen@ifttt.com
 // github.com/jhamon
-<<<<<<< HEAD
 /*var wordlist = [
-=======
 var wordlist = [
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
   'update',
   'automate',
   'sync',
@@ -63,11 +60,7 @@ function rotateContents ($container, n) {
     setTimeout(function () {
       popPushNItems($container, n);
       $container.css({top: 0});
-<<<<<<< HEAD
     }, 300);    
-=======
-    }, 300);
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
 }
 
 function randomSlotttIndex(max) {
@@ -75,13 +68,6 @@ function randomSlotttIndex(max) {
   return (randIndex > 10) ? randIndex : randomSlotttIndex(max);
 }
 
-<<<<<<< HEAD
-  
-  
-=======
-
-
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
 function animate() {
   var wordIndex = randomSlotttIndex(wordlist.length);
   $wordbox.animate({top: -wordIndex*150}, 500, 'swing', function () {
@@ -91,20 +77,20 @@ function animate() {
 
 $(function () {
   $wordbox = $('#wordbox .slottt-machine-recipe__items_container');
-<<<<<<< HEAD
+
   buildSlotContents($wordbox, wordlist);  
   buildSlotContents($wordbox, wordlist);  
   buildSlotContents($wordbox, wordlist);  
   buildSlotContents($wordbox, wordlist);  
   
   setTimeout(animate, 0.1);
-});*/
-=======
+});
+
   buildSlotContents($wordbox, wordlist);
   buildSlotContents($wordbox, wordlist);
   buildSlotContents($wordbox, wordlist);
   buildSlotContents($wordbox, wordlist);
 
   setInterval(animate, 2000);
-});
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
+}); */
+

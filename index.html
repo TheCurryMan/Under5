@@ -2,13 +2,9 @@
 <html lang="en">
 
 <head>
-
+  <title>Under 5</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
-=======
-
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
@@ -17,221 +13,172 @@
   <script src="Domain.js"></script>
   <script src="Ranges.js"></script>
   <script type="text/javascript" src="main.js"></script>
-<<<<<<< HEAD
-  
-=======
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
-  <script type="text/javascript" src="jquery-1.6.1.min.js"></script>
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'your-app-id',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <link rel="stylesheet" href="main.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
 <script>
-<<<<<<< HEAD
+  var go = 1;
+  //var start = true
+
+  $(document).ready(function() {
+    $("a").click(function() {
+      
+      for (i = 0; i < 2; i++) {
+
+        //alert(i);
+
+        if (go == 1) {
+         //alert("if")
+          //alert("val: " + go);
+          go = 2;
+          //alert(i);
+          $wordbox3 = $('#wordbox3 .slottt-machine-recipe__items_container');
+          buildSlotContents($wordbox3, wordlist);
+          buildSlotContents($wordbox3, wordlist);
+          buildSlotContents($wordbox3, wordlist);
+          buildSlotContents($wordbox3, wordlist);
+          setTimeout(animate, 100);
+
+          function animate() {
+            var wordIndex = randomSlotttIndex(wordlist.length);
+            $wordbox3.animate({
+              top: -wordIndex * 150
+            }, 500, 'swing', function() {
+              rotateContents($wordbox3, wordIndex);
+              //alert("Index of domain: " + wordIndex);
+              //generateDomain(wordIndex);
+              //setTimeout(getDomain, 0.2)
 
 
+            });
+            
+          }
+        } else {
+          //alert("else")
 
+          go = 1;
 
-var go = true;
+          $wordbox2 = $('#wordbox2 .slottt-machine-recipe__items_container');
+          buildSlotContents($wordbox2, wordlist2);
+          buildSlotContents($wordbox2, wordlist2);
+          buildSlotContents($wordbox2, wordlist2);
+          buildSlotContents($wordbox2, wordlist2);
+          setTimeout(animate1, 100);
 
-$(document).ready(function(){
-    $("a").click(function(){
+          function animate1() {
+
+            var wordIndex2 = randomSlotttIndex1(wordlist2.length);
+            //alert(wordIndex)
+            $wordbox2.animate({
+              top: -wordIndex2 * 150
+            }, 500, 'swing', function() {
+              rotateContents1($wordbox2, wordIndex2);
+              //alert("Index of range: " + wordIndex2);
+              //generateRanges(wordIndex2);
+            });
+          }
+          
+         
+        }
+      }
+      
+       setTimeout(function() {
+            getDomain();
+            getRanges();
+          }, 1000);  
       
       
-      for(i = 0; i < 2; i++) { 
-      
-      //alert(i);
-      
-      if (go == true) {
-        go = false;
-      //alert(i);
-    $wordbox3 = $('#wordbox3 .slottt-machine-recipe__items_container');
-  buildSlotContents($wordbox3, wordlist);
-  buildSlotContents($wordbox3, wordlist);
-  buildSlotContents($wordbox3, wordlist);
-  buildSlotContents($wordbox3, wordlist);
-    setTimeout(animate, 0.0001);
-    function animate() {
-    var wordIndex = randomSlotttIndex(wordlist.length);
-    $wordbox3.animate({
-      top: -wordIndex * 150
-    }, 500, 'swing', function() {
-      rotateContents($wordbox3, wordIndex);
-      //alert("Index of domain: "+ wordIndex);
-      //generateDomain(wordIndex);
-      //setTimeout(getDomain, 0.2)
-
       
     });
-  }
-  
-  setTimeout(function() {
-     animate()
-     getRange()
-     
-   }, 1000);
-  
-  
-  
-  
-      }
-  
-      else {
-  //alert("Calling life")
-  
-  go = true;
-  
-  $wordbox2 = $('#wordbox2 .slottt-machine-recipe__items_container');
-  buildSlotContents($wordbox2, wordlist2);
-  buildSlotContents($wordbox2, wordlist2);
-  buildSlotContents($wordbox2, wordlist2);
-  buildSlotContents($wordbox2, wordlist2);
- 
-  function animate1() {
-      
-  var wordIndex2 = randomSlotttIndex1(wordlist2.length);
-  //alert(wordIndex)
-  $wordbox2.animate({
-    top: -wordIndex2 * 150
-  }, 500, 'swing', function() {
-    rotateContents1($wordbox2, wordIndex2);
-    //alert("Index of range: "+wordIndex2);
-    //generateRanges(wordIndex2);
+    
+    
   });
-}
-    
-   setTimeout(function() {
-     animate1()
-     getDomain()
-   }, 1000);
-      }
-      }
-    });
-    
-     
-    
-});
 
-function getDomain() {
-  var content = document.getElementById("domain").getElementsByTagName('div');
-  var dom = (content[0].innerHTML);  
-  generateDomain(dom);
-}
-
-function getRange() {
-  var content = document.getElementById("range").getElementsByTagName('div');
-  var ran = (content[0].innerHTML);  
-  generateRanges(ran);
-}
-
-=======
-  function loadData() {
-    generateRanges()
-    generateDomain()
+  function getDomain() {
+    var content = document.getElementById("domain").getElementsByTagName('div');
+    //alert(content[0].innerHTML);
+    generateDomain(content[0].innerHTML);
+  }
+  function getRanges() {
+    var content = document.getElementById("range").getElementsByTagName('div');
+    //alert(content[0].innerHTML);
+    generateRanges(content[0].innerHTML);
 
 
   }
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
-
 </script>
 
 <body>
-<<<<<<< HEAD
-=======
-  <div class="top">
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
-
-    <div class="row">
-      <div class="col s12">
-        <center>
-<<<<<<< HEAD
-            <a class="waves-effect waves-light btn-large green">Generate</a>
-=======
-            <a class="waves-effect waves-light btn-large green" onclick = "loadData()">Generate</a>
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
-            <a class="waves-effect waves-light btn-large red"><i class="fa fa-heart"></i></a>
-        </center>
-      </div>
-    </div>
-<<<<<<< HEAD
-
-  
-  
-
-  <div>
-    <div class="row">
-        <h3 class="center"> Build the</h3>
-        <div class="slottt-machine-recipe">
-          <div class="slottt-machine-recipe__mask" id="wordbox3">
-          <div id = "domain" class="slottt-machine-recipe__items_container recipe_if">
-          </div>
-        </div>
-        </div>
-      <h3 class="center"> for </h3>
-      <center>
-      <div class="slottt-machine-recipe">
-  
-          <div class="slottt-machine-recipe__mask" id="wordbox2">
-          <div id = "range" class="slottt-machine-recipe__items_container recipe_if">
-          </div>
-        </div>
-        </div>
-      </center>
-=======
+<center>
   <div class="row">
-  </div>
-
-  </div>
-  <div>
-    <div class="row">
-      <h1 class=" col s4">Build the </h1>
-      <textarea id="textarea1" class="materialize-textarea col s2"></textarea>
-      <h1 class="col s2 center"> for </h1>
-      <textarea id="textarea2" class="materialize-textarea col s2"></textarea>
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
+    <div class="navbar-fixed">
+      <nav style="background-color:#81cdd8">
+    <div class="col s12">
+        <a id="gen" class="waves-effect waves-light btn-large green">Generate</a>
+       <!-- <a id="love" class="waves-effect waves-light btn-large red" ><i class="fa fa-heart"></i></a>-->
+    </div>
+      </nav>
     </div>
   </div>
+</center>
 
+
+<center>
   <div>
     <div class="row">
-    <br>
-    <br>
-    <br>
-      <textarea id="textarea3" class="materialize-textarea col s2"></textarea>
-<<<<<<< HEAD
-      <h3 class="col s2 center"> then </h3>
-=======
-      <h1 class="col s2 center"> then </h1>
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
-      <textarea id="textarea4" class="materialize-textarea col s2"></textarea>
+      <h3 class="center">Make the</h3>
+      <div class="slottt-machine-recipe">
+        <div class="slottt-machine-recipe__mask" id="wordbox3">
+          <div id="domain" class="slottt-machine-recipe__items_container recipe_if">
+          </div>
+        </div>
+      </div>
+      <h3 class="center"> of </h3>
+      <div class="slottt-machine-recipe">
+        <div class="slottt-machine-recipe__mask" id="wordbox2">
+          <div id="range" class="slottt-machine-recipe__items_container recipe_if">
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
-<<<<<<< HEAD
-  
-  <div class="slottt-machine-recipe">
+</center>
+  <div>
+    <div class="row">
+      <br>
+      <br>
+      <center>
+        <p id="fun1" class="materialize-textarea flow-text col s5"></p>
+        <h3 class="col s2 center"> then </h3>
+        <p id="fun2" class="materialize-textarea flow-text col s5"></p>
+      </center>
       
 
-      </div>
-      
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
-      <script type="text/javascript" src="main.js"></script>
-=======
-
-  <div class="slottt-machine-recipe">
-
-      <div class="slottt-machine-recipe__mask" id="wordbox">
-      <div class="slottt-machine-recipe__items_container recipe_if">
-      </div>
-      </div>
-
-      <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
-
->>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
+    </div>
   </div>
-
+  </center>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
