@@ -10,3 +10,29 @@ body {
 footer {
   background-color: #1abc9c;
 }
+.slottt-machine-recipe {
+  margin: 0px auto;
+  width: 700px;
+  margin-top: 50px;
+}
+
+.slottt-machine-recipe__mask {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-bottom: -40px;
+}
+
+.slottt-machine-recipe__items_container {
+    position: absolute;
+}
+
+.slottt-machine-recipe__item {
+    min-height: 150px;
+    max-height: 150px;
+    margin: 0px;
+    padding: 0px;
+    background-size: contain;
+}
