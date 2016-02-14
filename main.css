@@ -50,24 +50,22 @@ footer {
     position: relative;
     display: inline-block;
     margin-bottom: -40px;
-    vertical-align:center;
 }
 
 .slottt-machine-recipe__items_container {
     position: absolute;
-    text-align:center;
+    /*text-align:center;*/
     margin: auto;
-    vertical-align:center;
 }
 
 .slottt-machine-recipe__item {
     min-height: 150px;
-
+    vertical-align: middle;
+    align-self:center;
     width:100%;
     max-height: 150px;
     text-align: center;
-   vertical-align:center;
-    padding-left: 24%;
+    /*padding: 0px;*/
     background-size: contain;
     margin: auto;
 }
@@ -75,7 +73,7 @@ footer {
 .recipe_if, .recipe_then {
     font-weight: bold;
     font-size: 60px;
-    text-align:center;
+    width:100%;
 }
 
 .tagline {
@@ -98,9 +96,9 @@ nav #navbar-fixed{
 }
 
 #fun1, #fun2{
-  font-size: 1.9em;
+  font-size: 1.8rem;
   text-align:center;
-  vertical-align: center;
+  vertical-align: middle;
   alignment-baseline: bottom;
   text-decoration: italic;
 }
