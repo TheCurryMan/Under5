@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var range = 
 [["Dairy",["Dead", "Big", "force one cow to make the milk for three", "spend millions developing cheese"]], 
 ["Chemicals",["Alive", "Big", "use chemicals and start WWIII", "React more Sodium and Chloride for the saltiest nation alive"]], 
@@ -8,6 +9,18 @@ var range =
 ["Books", ["Dead", "Big", "read Farenheit 451 and learn from it", "burn those pages"]],
 ["Education", ["Alive", "Big", "pay teachers 1/1000 of what atheletes make", "hire unqualified people to teach the future"]],
 ["Energy",["Alive", "Big", "start nuclear meltdown", "swim in cash made by solar panels"]],
+=======
+var range =
+[["Dairy",["Dead", "Big", "force one cow to make the milk for three", "spend thousands developing cheese"]],
+["Chemicals",["Alive", "Big", "use chemicals and start WWIII", "React more Sodium and Chloride for the saltiest nation alive"]],
+["Airplanes", ["Dead", "Big", "find two new buildings", "trust no one, and suspect everyone. The world is filled with corporate spies"]],
+["Crops", ["Alive", "Big", "develop 400 tons of harmful pesticides", "create law suits for genetic theft"]],
+["Banking", ["Alive", "Big", "mislead the nation, and start a second Great Depression", "bill people, and push people into debt"],
+["Tech", ["Alive", "Big", "release a new device every other hour", "claim to be a hacker and strike fear into all"]],
+["Books", ["Dead", "Big", "read Farenheit 451 and learn from it", "burn those pages"]],
+["Education", ["Alive", "Big", "pay teachers 1/1000 of what atheletes make", "hire unqualified people to teach the future"]],
+["Energy",["Alive", "Big", "start nuclear meltdown", ""]],
+>>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
 ["Fashion",["Alive", "Big", "keep it 90% skin, 10% translucent", "Buy everything never wear anything"]],
 ["Beverages",["Alive", "Big", "try to keep the percentage legal", "know how to skip fake IDs"]],
 ["Health", ["Alive", "Big", "complain about Obama", "overdose patients"]],
@@ -16,6 +29,7 @@ var range =
 ["Manufacturing", ["Alive", "Big", "always produce in china", "live for yourself, and only yourself"]],
 ["Media", ["Alive", "Big", "sexualize, and agrandize", "make sure people hear what they want to hear"]],
 ["Music", ["Alive", "Big", "remember that emotions are underrated", "move the masses"]],
+<<<<<<< HEAD
 ["Cars", ["Alive", "Big", "build a faulty mechanism", "blame crashes on the drivers"]],
 ["Steel", ["Alive", "Big", "develop a monopoly", "wallow in misery because you will never be Carnegie"]],
 ["Oil", ["Alive", "Big", "develop a monopoly", "wallow in misery because you will never be Rockefeller"]],
@@ -102,3 +116,54 @@ function animate1() {
   });
 }
    
+=======
+["Tourism", ["Alive", "Big", ""]], //HELP IDK WHAT TO PUT FOR THIS
+["Cars", ["Alive", "Big", ""]],
+["Steel", ["Alive", "Big", "develop a monopoly", "wallow in misery because you will never be Carnegie"]],
+["Oil", ["Alive", "Big", "develop a monopoly", "wallow in misery because you will never be Rockefeller"]],
+["Video Games", ["Alive", "Big", "brainwash a generation of killers", "destroy children's socializing capability"]],
+["Phones", ["Alive", "Big", ""]],
+["Boats", ["Alive", "Big", ""]],
+["Fishing", ["Alive", "Big", ""]],
+["Stationeries", ["Alive", "Big", ""]],
+["Junk Food", ["Alive", "Big", ""]]
+["Beauty", ["Alive", "Big", ""]],
+["Watches", ["Alive", "Big", ""]],
+["Messaging", ["Alive", "Big", ""]],
+["Art", ["Alive", "Big", ""]],
+["Clothes", ["Alive", "Big", ""]],
+["Culinary", ["Alive", "Big", "get yelled at by Gordon Ramsey", "call an existing recipe yours"]],
+["Shipping", ["Alive", "Big", "ship products 2 months late", "overcharge"]],
+["Plastics", ["Alive", "Big", ""]],
+["Lights", ["Alive", "Big", ""]],
+["Furniture", ["Alive", "Big", ""]],
+["Gardening", ["Alive", "Big", ""]],
+["News", ["Alive", "Big", "get the weather wrong", ""]],
+["Radios", ["Alive", "Big", "try to sound hype", "falsely advertise"]],
+//["Adult Film Industry", ["Alive", "Big", "say welcome to 47% of the online industry", "spread a new virus"]],
+["Videos", ["Alive", "Big", ""]],
+["Politics", ["Alive", "Big", ""]],
+["Headphones", ["Alive", "Big", "add more bass", "get dominated by Dre"]],
+["Toys", ["Alive", "Big", "study children", "enforce social stereotypes"]],
+["Supplies", ["Alive", "Big", ""]],
+["Jewelry", ["Alive", "Big", ""]]
+]]
+
+
+function generateRanges() {
+
+
+    var num = Math.floor(Math.random()*15);
+    var num2 = Math.floor(Math.random()*2);
+
+    var topic = range[num];
+
+    var statement = topic[1];
+
+    document.getElementById("textarea2").value = topic[0];
+    document.getElementById("textarea4").value = statement[num2 + 2];
+
+    return false
+}
+   
+>>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9

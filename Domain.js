@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 var domain2 = 
 [["Tesla", ["Alive", "Big", "Abuse your user base", "Hire Apple Enginers"]],
 ["Apple", ["Alive", "Big", "Stay 4 years behind comeptitors", "Sue the World"]],
 ["Microsoft", ["Alive", "Big", "Market first, fix bugs later", "Build a helper that creates more problems"]], 
+=======
+var domain2 =
+[["Tesla", ["Alive", "Big", "Abuse your user base", "Hire Apple Enginers"]],
+["Apple", ["Alive", "Big", "Stay 4 years behind comeptitors", "Sue the World"]],
+["Microsoft", ["Alive", "Big", "Market first, fix bugs later", "Build a helper that creates more problems"]],
+>>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
 ["Yahoo", ["Alive", "Big", "Question your existence",  "Do nothing for 5 years."]],
 ["Walmart", ["Alive", "Big", "Build a 200 Billion dollar scam",  "Become a house for the shady"]],
 ["BP Oil", ["Alive", "Big", "Spill Oil in the Pacific Ocean", "Deny everything"]],
 ["Trump", ["Alive", "Big", "Insult the people you need", "Build a wall"]],
+<<<<<<< HEAD
 ["T-Mobile", ["Alive", "Big", "Say you have doubled in size every year", "beat verizon in their own marketing"]],
 ["Verizon", ["Alive", "Big", "Make your first priority bad customer service", "Over charge you most loyal customers"]],
 ["Silk Road", ["Alive", "Big", "Start out shady", "Only trade in bitcoins"]],
@@ -31,6 +39,34 @@ var domain2 =
 ["Youtube", ["Alive", "Big", "Your average user is 10", "Slowly become worse and worse with every year"]],
 ["Gamestop", ["Alive", "Big", "Buy back products from your buyers for 1 tenth of its price", "Become known for the worst employees of all time"]],
 ["Ebay", ["Alive", "Big", "Blame everything on the users", ""]],
+=======
+["TMobile", ["Alive", "Big", "Say you have doubled in size every year", "beat verizon in their own marketing"]],
+["Verizon", ["Alive", "Big", "Make your first priority bad customer service", "Over charge you most loyal customers"]],
+["Silk Road", ["Alive", "Big", "Start out shady", "Only trade in bitcoins"]],
+["Starbucks", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
+>>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
 ["", ["Alive", "Big", ""]],
 ["", ["Alive", "Big", ""]],
 ["", ["Alive", "Big", ""]],
@@ -50,6 +86,7 @@ var domain2 =
 ["", ["Alive", "Big", ""]],
 ]
 
+<<<<<<< HEAD
 
 function generateDomain(wordTopic) {
     
@@ -121,3 +158,26 @@ function randomSlotttIndex(max) {
 
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+=======
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function generateDomain() {
+
+
+    var num = Math.floor(Math.random()*7);
+    var num2 = Math.floor(Math.random()*2);
+
+    var topic = domain2[num];
+
+    var statement = topic[1];
+
+    document.getElementById("textarea1").value = topic[0];
+    document.getElementById("textarea3").value = capitalizeFirstLetter(statement[num2 + 2]);
+
+    return false
+}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+>>>>>>> 55650f1d469dbc705b34b649231d433e2a66a1c9
