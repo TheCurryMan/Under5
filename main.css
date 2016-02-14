@@ -29,6 +29,7 @@ footer {
 .slottt-machine-recipe__items_container {
     position: absolute;
     text-align:center;
+    margin: auto;
 }
 
 .slottt-machine-recipe__item {
@@ -36,9 +37,10 @@ footer {
     width:100%;
     max-height: 150px;
     text-align: center;
-    margin: 0px;
+   
     padding: 0px;
     background-size: contain;
+    margin: auto;
 }
 
 .recipe_if, .recipe_then {

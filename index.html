@@ -49,8 +49,8 @@ $(document).ready(function(){
       top: -wordIndex * 150
     }, 500, 'swing', function() {
       rotateContents($wordbox3, wordIndex);
-      alert("Index of domain: "+ wordIndex);
-      generateDomain(wordIndex);
+      //alert("Index of domain: "+ wordIndex);
+      //generateDomain(wordIndex);
       //setTimeout(getDomain, 0.2)
 
       
@@ -87,24 +87,17 @@ $(document).ready(function(){
     top: -wordIndex2 * 150
   }, 500, 'swing', function() {
     rotateContents1($wordbox2, wordIndex2);
-    alert("Index of range: "+wordIndex2);
-    generateRanges(wordIndex2);
+    //alert("Index of range: "+wordIndex2);
+    //generateRanges(wordIndex2);
   });
 }
     
    setTimeout(function() {
      animate1()
      getDomain()
-     
    }, 1000);
-   
-   
-   
       }
-      
       }
-      
-      
     });
     
      
@@ -113,16 +106,14 @@ $(document).ready(function(){
 
 function getDomain() {
   var content = document.getElementById("domain").getElementsByTagName('div');
-      var dom = (content[0].innerHTML);  
-      generateDomain(dom)
-  
+  var dom = (content[0].innerHTML);  
+  generateDomain(dom);
 }
 
 function getRange() {
   var content = document.getElementById("range").getElementsByTagName('div');
-      var ran = (content[0].innerHTML);  
-      generateRanges(ran)
-  
+  var ran = (content[0].innerHTML);  
+  generateRanges(ran);
 }
 
 
