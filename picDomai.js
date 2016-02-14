@@ -1,22 +1,22 @@
 var picdomain = 
 [
   ["Box"],
-  ["carton"],
-  [""],
-  [""],
-  [""],
-  [""],
-  [""],
-  [""],
-  [""],
-  [""],
-  [""],
-  [""],
-  [""],
-  [],
-  [],
-  [],
-  [],
+  ["Carton"],
+  ["Trunk"],
+  ["House"],
+  ["Room"],
+  ["Mug"],
+  ["Jug"],
+  ["Car"],
+  ["Bed"],
+  ["Table"],
+  ["Handfull"],
+  ["Pocket"],
+  ["Cup"],
+  ["Pinata"],
+  ["Bowl"],
+  ["Dish"],
+  ["Glass"],
   ]
 
 
@@ -44,7 +44,7 @@ function generateDomain(wordIndex) {
 // github.com/jhamon
 
 var wordlist = [
-  "Tesla", "Apple", "Microsoft", "Yahoo", "Walmart", "BP Oil", "Trump", "TMobile", "Verizon",
+  "Box", "Carton", "Trunk", "House", "Room", "Mug", "Trump", "TMobile", "Verizon",
   "Silk Road", "Starbucks", "Urban Outfitters", "Yeezy", "Costco", "Call Of Duty", "Pepsi", "Steve Jobs"
 ];
 
