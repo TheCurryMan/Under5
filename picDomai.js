@@ -15,6 +15,7 @@ var domain2 =
 ["Costco", ["Alive", "Big", "Sell items only in bulk", "Charge people to buy your products"]],
 ["Call Of Duty", ["Alive", "Big", "Rebrand the same product every year", "Add a dog"]],
 ["Pepsi", ["Alive", "Big", "Can I have coke", "Always be the second choice"]],
+["Steve Jobs", ["Alive", "Big", "Take credit for your friends idea",  "Become CEO, give graduation speech at Stanford and call everybody idiots"]],
 ["Abercrombie and Fitch", ["Alive", "Big", "Only sell to anorexic teens",  "Call everybody who doesnt by your products losers"]],
 ["Home Depot", ["Alive", "Big", "Turn a blind eye to illegal imployment",  "Market illegal immigrants"]],
 ["Google", ["Alive", "Big", "Hire a kid to rename your company", "Get in a pissing fight with Amazon"]],
@@ -29,8 +30,8 @@ var domain2 =
 ["Nike", ["Alive", "Big", "Sell overpriced versions of your product", "Take advantage of countries' poverty"]],
 ["Origin", ["Alive", "Big", "Never become as big as Steam", "Become a partner with EA"]],
 ["Youtube", ["Alive", "Big", "Your average user is 10", "Slowly become worse and worse with every year"]],
-["Gamestop", ["Alive", "Big", "Buy back products from your buyers for 1 tenth of its price", "Become known for the worst employees of all time"]],
-["Ebay", ["Alive", "Big", "Blame everything on the users", ""]],
+["", ["Alive", "Big", ""]],
+["", ["Alive", "Big", ""]],
 ["", ["Alive", "Big", ""]],
 ["", ["Alive", "Big", ""]],
 ["", ["Alive", "Big", ""]],
@@ -51,9 +52,8 @@ var domain2 =
 ]
 
 
-function generateDomain(wordTopic) {
+function generateDomain(wordIndex) {
     
-    var wordIndex = wordlist.indexOf(wordTopic)
     
     var num = wordIndex;
     var num2 = Math.floor(Math.random()*2);
@@ -64,8 +64,6 @@ function generateDomain(wordTopic) {
 
    
     document.getElementById("textarea3").value = statement[num2 + 2];
-    
-   
     
     return false
 }
@@ -79,7 +77,7 @@ function generateDomain(wordTopic) {
 
 var wordlist = [
   "Tesla", "Apple", "Microsoft", "Yahoo", "Walmart", "BP Oil", "Trump", "TMobile", "Verizon",
-  "Silk Road", "Starbucks", "Urban Outfitters", "Yeezy", "Costco", "Call Of Duty", "Pepsi", "Steve Jobs", "Ebay"
+  "Silk Road", "Starbucks", "Urban Outfitters", "Yeezy", "Costco", "Call Of Duty", "Pepsi", "Steve Jobs"
 ];
 
 function buildSlotItem(text) {
