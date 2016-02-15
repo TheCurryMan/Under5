@@ -20,7 +20,7 @@ var domain2 =[
 ["Comcast", ["Alive", "Big", "Monopolize area service", "Become the most hated company"]],
 ["Air bnb", ["Alive", "Small", "Take a cat and divide it into 6 equal pieces", "Buy a time share"]],
 ["United Airlines", ["Alive", "Big", "Charge more for less", "Continue to make corruption scandals"]],
-["Coca Cola", ["Alive", "Big", "Use a fat old man to market your product", "Slowly kill off all of your consumers"]],
+["Coca Cola", ["Alive", "Big", "Imply perfection", "Slowly kill off all of your consumers"]],
 ["Ubisoft", ["Alive", "Big", "Produce a product that is always broken", "Produce the exact same product every year"]],
 ["Electronic Arts", ["Alive", "Big", "Never release a full product", "Become a super company that ruins your franchise"]],
 ["Valve", ["Alive", "Big", "Never release the product all of your consumers want", "Make lots of great products and then stop"]],

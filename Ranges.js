@@ -11,7 +11,7 @@ var range =
 ["Fashion",["Alive", "Big", "keep it 90% skin, 10% translucent", "Buy everything never wear anything"]],
 ["Beverages",["Alive", "Big", "try to keep the percentage legal", "know how to skip fake IDs"]],
 ["Health", ["Alive", "Big", "complain about Obama", "overdose patients"]],
-["Insurance", ["Alive", "Big", "get 15% off car insurance", "just scam"]],
+["Insurance", ["Alive", "Big", "get 15% off car insurance", "scam everything and anything"]],
 ["Law", ["Alive", "Big", "Keep lying", "Defend the rich"]],
 ["Manufacturing", ["Alive", "Big", "always produce in china", "live for yourself, and only yourself"]],
 ["Media", ["Alive", "Big", "sexualize, and agrandize", "make sure people hear what they want to hear"]],
